@@ -4,6 +4,48 @@
   padding: 0;
 }
 
+body {
+  background: white;
+}
+
 .rainbow {
-  border: 1px solid black;
+  height: 200px;
+  overflow: hidden;
+}
+
+.rainbow div {
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.rainbow > div {
+  background: hsl(0, 80%, 50%);
+  width: 400px;
+  height: 400px;
+}
+
+.rainbow > div > div {
+  background: hsl(60, 80%, 50%);
+  height: 380px;
+}
+
+.rainbow > div > div > div {
+  background: hsl(120, 80%, 50%);
+}
+
+.rainbow > div > div > div > div {
+  background: hsl(180, 80%, 50%);
+}
+
+.rainbow > div > div > div > div > div {
+  background: hsl(240, 80%, 50%);
+}
+
+.rainbow > div > div > div > div > div > div {
+  background: hsl(300, 80%, 50%);
+}
+
+.rainbow > div > div > div > div > div > div > div {
+  background: #fff;
+  height: 280px;
 }
